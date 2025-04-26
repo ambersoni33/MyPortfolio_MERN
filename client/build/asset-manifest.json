@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3b45d65a.css",
+    "main.js": "/static/js/main.e3162740.js",
+    "static/js/453.419a5d54.chunk.js": "/static/js/453.419a5d54.chunk.js",
+    "static/media/background_home_light.png": "/static/media/background_home_light.e805ecab0f0a554ebd0a.png",
+    "static/media/background_home.png": "/static/media/background_home.71ab5f8ce14cb4ca33bb.png",
+    "static/media/RenderCV_EngineeringResumes_Theme (13).pdf": "/static/media/RenderCV_EngineeringResumes_Theme (13).a50ef801b9d90ef1e298.pdf",
+    "index.html": "/index.html",
+    "main.3b45d65a.css.map": "/static/css/main.3b45d65a.css.map",
+    "main.e3162740.js.map": "/static/js/main.e3162740.js.map",
+    "453.419a5d54.chunk.js.map": "/static/js/453.419a5d54.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3b45d65a.css",
+    "static/js/main.e3162740.js"
+  ]
+}
