@@ -3,32 +3,34 @@ const cors = require("cors");
 const dotenv = require("dotenv");
 const path = require('path');
 
-//dotenv configuartion
+// dotenv configuration
 dotenv.config();
 
-//rest object
+// express app
 const app = express();
 
-//midlewares
+// middlewares
 app.use(cors());
 app.use(express.json());
 
+// API routes
 app.use("/api/v1/portfolio", require("./routes/portfolioRoute"));
+
+// static files
+const __dirname1 = path.resolve();
+
 if (process.env.NODE_ENV === "production") {
-app.use(express.static(path.join(__dirname,'./client/build')));
-//routes
+  app.use(express.static(path.join(__dirname1, "/client/build")));
 
-
-app.get('*',function(req,res){
-    res.sendFile(path.join(__dirname,'./client/build/index.html'));
-});
-
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname1, "/client/build/index.html"));
+  });
 }
-//port
 
+// PORT
 const PORT = process.env.PORT || 8080;
 
-//listen
+// listen
 app.listen(PORT, () => {
-  console.log(`Server Runnning On PORT ${PORT} `);
+  console.log(`Server Running on PORT ${PORT}`);
 });
